@@ -1,0 +1,5 @@
+{
+  "name": "Example Service",
+  "description": "An example service server for Cloudflare Apps",
+  "repository": "https://github.com/conzorkingkong/ExampleService"
+}
