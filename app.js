@@ -13,6 +13,8 @@ app.post('/', function(request, response) {
   
 })
 
-app.listen(PORT, function() {
+var server = app.listen(PORT, function() {
   console.log("running on port " + PORT)
 })
+
+module.exports = server
