@@ -1,7 +1,7 @@
 var express = require("express")
 var bodyParser = require("body-parser")
 var app = express()
-var jsonFetch = require("simple-json-fetch")
+var simpleFetch = require("simple-fetch")
 var PORT = process.env.PORT || 3000
 
 app.use(bodyParser.json())
