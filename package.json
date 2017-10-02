@@ -1,19 +1,35 @@
 {
-  "name": "app-backend",
-  "version": "1.0.0",
-  "description": "",
+  "name": "example-express-service",
+  "version": "0.0.0",
+  "description": "An Express.js server for Cloudflare App services",
   "main": "app.js",
   "scripts": {
+    "lint": "standard --fix ./source/**/*.js || true",
     "test": "tape spec.js",
     "start": "node app.js"
   },
-  "author": "Connor Peshek",
+  "contributors": [
+    {
+      "name": "Connor Peshek",
+      "email": "connor@connorpeshek.me"
+    },
+    {
+      "name": "Cloudflare Inc.",
+      "email": "app-developer-help@cloudflare.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.0",
     "express": "^4.15.4",
     "simple-fetch": "^1.5.0",
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
     "supertest": "^3.0.0",
     "tape": "^4.8.0"
+  },
+  "standard": {
+    "globals": []
   }
 }
