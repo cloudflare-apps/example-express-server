@@ -4,8 +4,8 @@
   "description": "An Express.js server for Cloudflare App services",
   "main": "app.js",
   "scripts": {
-    "lint": "standard --fix ./source/**/*.js || true",
-    "test": "tape spec.js",
+    "lint": "standard --fix ./app/**/*.js ./test/**/*.js || true",
+    "test": "tape test/index.js",
     "start": "node app.js"
   },
   "contributors": [
@@ -22,7 +22,7 @@
   "dependencies": {
     "body-parser": "^1.18.0",
     "express": "^4.15.4",
-    "simple-fetch": "^1.5.0",
+    "simple-fetch": "^1.5.0"
   },
   "devDependencies": {
     "standard": "^10.0.3",
